@@ -3,6 +3,7 @@ package com.thecuriouscat.springmicroservices.limitsservice.controller;
 import com.thecuriouscat.springmicroservices.limitsservice.config.CommonConfig;
 import com.thecuriouscat.springmicroservices.limitsservice.entity.Limits;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Author: theresa
  * @Date: 11/6/22
  */
+
 @RestController
 public class LimitsController {
 
