@@ -18,6 +18,13 @@ public class LimitsController {
     @Autowired
     private CommonConfig configuration;
 
+    /**
+     *@description: handles the limits retrieval
+     * @param
+     *@author: theresa
+     *@date: 11/7/22
+     */
+
     @GetMapping("/limits")
     public Limits retrieveLimits(){
         return new Limits(configuration.getMinimum(), configuration.getMaximum());
