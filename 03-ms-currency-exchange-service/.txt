@@ -3,3 +3,6 @@ http://localhost:8000/currency-exchange/from/USD/to/RMB
 
 Currency Conversion Service
 http://localhost:8100/currency-conversion/from/USD/to/RMB/quantity/10
+
+Test API for circuit breaker
+http://localhost:8000/sample-api
