@@ -1,0 +1,1 @@
+URL: http://localhost:8100/currency-conversion/from/USD/to/RMB/quantity/10

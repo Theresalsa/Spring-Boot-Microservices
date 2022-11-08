@@ -25,7 +25,8 @@ public class CurrencyExchangeController {
     private CurrencyExchangeRepository currencyExchangeRepository;
 
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
-    public CurrencyExchange retrieveExchangeValue(@PathVariable String from, @PathVariable String to) throws Exception{
+    public CurrencyExchange retrieveExchangeValue(@PathVariable String from,
+                                                  @PathVariable String to) throws Exception{
 
         CurrencyExchange currencyExchange = currencyExchangeRepository.findCurrencyExchangeByFromAndTo(from, to);
         if(currencyExchange == null) throw new RuntimeException("Unable to find data for" + from + "to" + to);
