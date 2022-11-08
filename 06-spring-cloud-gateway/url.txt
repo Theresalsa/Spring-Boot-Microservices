@@ -1,0 +1,9 @@
+APIs for API Gateway:
+http://localhost:8765/CURRENCY-EXCHANGE/currency-exchange/from/USD/to/RMB/
+http://localhost:8765/CURRENCY-CONVERSION/currency-conversion/from/USD/to/RMB/quantity/10
+http://localhost:8765/CURRENCY-CONVERSION/currency-conversion-feign/from/USD/to/RMB/quantity/10
+
+new API format after ApiGatewayConfiguration:
+http://localhost:8765/currency-exchange/from/USD/to/RMB/
+http://localhost:8765/currency-conversion/from/USD/to/RMB/quantity/10
+http://localhost:8765/currency-conversion-new/from/USD/to/RMB/quantity/10
