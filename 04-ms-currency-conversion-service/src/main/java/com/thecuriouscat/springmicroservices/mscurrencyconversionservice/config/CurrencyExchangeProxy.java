@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @Author: theresa
  * @Date: 11/7/22
  */
-@FeignClient(name="currency-exchange", url="localhost:8000") //TODO: the url is hardcoded; will change later since the url may change as the instances change due to load balanceing
+//@FeignClient(name="currency-exchange", url="localhost:8000") //TODO: the url is hardcoded; will change later since the url may change as the instances change due to load balanceing
 // the name need to match with that stated in application.properties
+@FeignClient(name="currency-exchange")
+//let FeignClient to talk to Eureka, and pick up the instance of CurrencyExchange, and do
+//load balancing between them
 public interface CurrencyExchangeProxy {
 
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
